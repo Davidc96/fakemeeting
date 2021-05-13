@@ -13,25 +13,25 @@ from getpass import getpass
 
 
 # smtp settings
-SERVER = 'smtp.gmail.com'
-PORT = 587
-USER_EMAIL = "<email>"
-USER_PASS = "<password>"
+SERVER = ''
+PORT = 0
+USER_EMAIL = ""
+USER_PASS = ""
 
 # email settings
-EMAIL_SUBJECT = "Corona Meeting"
+EMAIL_SUBJECT = ""
 
 # event settings
-EVENT_DESCRIPTION = "Corona Update Meeting"
-EVENT_SUMMARY = "Corona update meeting"
+EVENT_DESCRIPTION = ""
+EVENT_SUMMARY = ""
 
-ORGANIZER_NAME = "Bill Gates"
-ORGANIZER_EMAIL = "bill@microsoft.com"
-ATTENDEES = ["bob@microsoft.com", "john@microsoft.com"]
+ORGANIZER_NAME = ""
+ORGANIZER_EMAIL = ""
+ATTENDEES = []
 
 # template settings
-EVENT_TEXT = "Corona update"
-EVENT_URL = "https://phishing-url-here"
+EVENT_TEXT = ""
+EVENT_URL = ""
 
 def setup_args():
     parser = optparse.OptionParser()
@@ -141,12 +141,6 @@ def send_email(msg):
     mailServer.close()
 
 def main():
-    SERVER = 'smtp.gmail.com'
-    PORT = 587
-    USER_EMAIL = "<email>"
-    USER_PASS = "<password>"
-
-
     (opts, args) = setup_args()
     
 
